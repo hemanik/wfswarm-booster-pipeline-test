@@ -22,7 +22,7 @@ import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Application;
 
 /**
- * Resource entry point
+ * Resource entry point what is the point?
  */
 @ApplicationPath("/api")
 public class ApplicationConfig extends Application {
