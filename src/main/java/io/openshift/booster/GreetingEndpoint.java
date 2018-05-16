@@ -34,4 +34,12 @@ public class GreetingEndpoint {
         String suffix = name != null ? name : "World";
         return new Greeting(String.format(template, suffix));
     }
+
+    @GET
+    @Path("/webhook")
+    @Produces("application/json")
+    public Greeting webhook(@QueryParam("name") String name) {
+        String suffix = name != null ? name : "World";
+        return new Greeting(String.format(template, suffix));
+    }
 }
